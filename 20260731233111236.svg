@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 700" width="100%" height="100%" style="background-color: #0F172A; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  
+  <defs>
+    <!-- 渐变效果定义 -->
+    <linearGradient id="philosophy-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#6366F1" />
+    </linearGradient>
+    
+    <linearGradient id="core-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+
+    <linearGradient id="subnode-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+
+    <linearGradient id="theory-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <!-- 阴影滤镜 -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+    
+    <!-- 箭头标记定义 -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38BDF8" />
+    </marker>
+
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#F59E0B" />
+    </marker>
+
+    <marker id="arrow-loop" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#10B981" />
+    </marker>
+    
+    <marker id="arrow-down" viewBox="0 0 10 10" refX="5" refY="6" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 1 0 L 5 10 L 9 0 z" fill="#8B5CF6" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="575" y="45" text-anchor="middle" fill="#F8FAFC" font-size="22" font-weight="bold" letter-spacing="1">买家全景决策模型架构图 (完整递进版)</text>
+  <text x="575" y="72" text-anchor="middle" fill="#94A3B8" font-size="13">从海选评估、锁定理性最优解，到最终行为促发与售后反哺的全路径模型</text>
+
+  <!-- Top Banner: JTBD 底层哲学 -->
+  <g transform="translate(225, 95)" filter="url(#shadow)">
+    <rect width="700" height="54" rx="12" fill="url(#philosophy-grad)" />
+    <text x="350" y="27" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="bold" dominant-baseline="middle">
+      底 层 哲 学：JTBD 待办任务理论（Jobs-to-be-Done）
+    </text>
+    <text x="350" y="44" text-anchor="middle" fill="#E0E7FF" font-size="11" dominant-baseline="middle">
+      贯穿全局：情境困境 (Situation) ──► 改变动机 (Motivation) ──► 理想进阶状态 (Progress)
+    </text>
+  </g>
+
+  <!-- Down Arrow from Philosophy -->
+  <path d="M 575,149 L 575,195" stroke="#8B5CF6" stroke-width="3" stroke-dasharray="4,4" marker-end="url(#arrow-down)" />
+
+  <!-- Main Pipeline (完整主线节点) -->
+  <g filter="url(#shadow)">
+    <!-- 1. 需要 -->
+    <g transform="translate(40, 200)">
+      <rect width="125" height="60" rx="10" fill="url(#core-grad)" />
+      <text x="62.5" y="35" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="bold">1. 需要 (Needs)</text>
+    </g>
+    <path d="M 165,230 L 195,230" stroke="#38BDF8" stroke-width="3" marker-end="url(#arrow)" />
+
+    <!-- 2. 问题 -->
+    <g transform="translate(200, 200)">
+      <rect width="135" height="60" rx="10" fill="url(#core-grad)" />
+      <text x="67.5" y="35" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="bold">2. 问题 (Problem)</text>
+    </g>
+    <path d="M 335,230 L 365,230" stroke="#38BDF8" stroke-width="3" marker-end="url(#arrow)" />
+
+    <!-- 3. 需求 -->
+    <g transform="translate(370, 200)">
+      <rect width="135" height="60" rx="10" fill="url(#core-grad)" />
+      <text x="67.5" y="35" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="bold">3. 需求 (Wants)</text>
+    </g>
+    <path d="M 505,230 L 535,230" stroke="#38BDF8" stroke-width="3" marker-end="url(#arrow)" />
+
+    <!-- 4. 产品集合 -->
+    <g transform="translate(540, 200)">
+      <rect width="145" height="60" rx="10" fill="url(#core-grad)" />
+      <text x="72.5" y="35" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="bold">4. 产品集合 (Set)</text>
+    </g>
+    <path d="M 685,230 L 715,230" stroke="#38BDF8" stroke-width="3" marker-end="url(#arrow)" />
+
+    <!-- 4.5 理性最优解 -->
+    <g transform="translate(720, 200)">
+      <rect width="165" height="60" rx="10" fill="url(#subnode-grad)" stroke="#FBBF24" stroke-width="1.5" />
+      <text x="82.5" y="27" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="bold">4.5 理性最优解</text>
+      <text x="82.5" y="45" text-anchor="middle" fill="#FEF3C7" font-size="11">(锁定心仪选项)</text>
+    </g>
+    <path d="M 885,230 L 925,230" stroke="#F59E0B" stroke-width="3" marker-end="url(#arrow-amber)" />
+
+    <!-- 5. 决策成交 -->
+    <g transform="translate(930, 200)">
+      <rect width="175" height="60" rx="10" fill="url(#core-grad)" />
+      <text x="87.5" y="35" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="bold">5. 决策成交 (Action)</text>
+    </g>
+  </g>
+
+  <!-- Vertical Connectors to Theories -->
+  <path d="M 437,260 L 437,320" stroke="#475569" stroke-width="2" stroke-dasharray="3,3" />
+  <path d="M 612,260 L 612,320" stroke="#475569" stroke-width="2" stroke-dasharray="3,3" />
+  <path d="M 802,260 L 802,320" stroke="#475569" stroke-width="2" stroke-dasharray="3,3" />
+  <path d="M 1017,260 L 1017,320" stroke="#475569" stroke-width="2" stroke-dasharray="3,3" />
+
+  <!-- Theory Cards (微观理论插件区) -->
+  <g filter="url(#shadow)" transform="translate(0, 320)">
+    <!-- McKinsey CDJ -->
+    <g transform="translate(350, 0)">
+      <rect width="160" height="145" rx="10" fill="url(#theory-grad)" stroke="#3B82F6" stroke-width="1.5" />
+      <rect x="0" y="0" width="160" height="28" rx="10" fill="#1E3A8A" />
+      <text x="80" y="18" text-anchor="middle" fill="#93C5FD" font-size="12" font-weight="bold">McKinsey CDJ</text>
+      <text x="80" y="55" text-anchor="middle" fill="#F8FAFC" font-size="13" font-weight="bold">初始心智清单</text>
+      <text x="80" y="75" text-anchor="middle" fill="#94A3B8" font-size="11">Initial Consideration</text>
+      <text x="80" y="105" text-anchor="middle" fill="#CBD5E1" font-size="10">触发需求时</text>
+      <text x="80" y="122" text-anchor="middle" fill="#CBD5E1" font-size="10">第一反应想到的品牌</text>
+    </g>
+
+    <!-- Google Messy Middle & Gartner -->
+    <g transform="translate(525, 0)">
+      <rect width="175" height="145" rx="10" fill="url(#theory-grad)" stroke="#38BDF8" stroke-width="1.5" />
+      <rect x="0" y="0" width="175" height="28" rx="10" fill="#0369A1" />
+      <text x="87.5" y="18" text-anchor="middle" fill="#BAE6FD" font-size="12" font-weight="bold">Messy Middle &amp; Gartner</text>
+      <text x="87.5" y="52" text-anchor="middle" fill="#F8FAFC" font-size="13" font-weight="bold">探索与评估穿梭</text>
+      <text x="87.5" y="72" text-anchor="middle" fill="#94A3B8" font-size="11">信息加减法 &amp; 买家任务</text>
+      <text x="87.5" y="102" text-anchor="middle" fill="#CBD5E1" font-size="10">个人：加法/减法动态拉长</text>
+      <text x="87.5" y="120" text-anchor="middle" fill="#CBD5E1" font-size="10">B2B：方案对比与验证拉齐</text>
+    </g>
+
+    <!-- Barrier / Rational Optimal State -->
+    <g transform="translate(715, 0)">
+      <rect width="175" height="145" rx="10" fill="url(#theory-grad)" stroke="#F59E0B" stroke-width="1.5" />
+      <rect x="0" y="0" width="175" height="28" rx="10" fill="#78350F" />
+      <text x="87.5" y="18" text-anchor="middle" fill="#FDE68A" font-size="12" font-weight="bold">理性说服与心理高墙</text>
+      <text x="87.5" y="52" text-anchor="middle" fill="#F8FAFC" font-size="13" font-weight="bold">确定最优但未付钱</text>
+      <text x="87.5" y="72" text-anchor="middle" fill="#94A3B8" font-size="11">认知完成 vs 行为未出</text>
+      <text x="87.5" y="102" text-anchor="middle" fill="#FCA5A5" font-size="10">阻力1：改变焦虑 / 怕买错</text>
+      <text x="87.5" y="120" text-anchor="middle" fill="#FCA5A5" font-size="10">阻力2：习惯性拖延 / 观望</text>
+    </g>
+
+    <!-- Behavioral Biases & Physical Availability -->
+    <g transform="translate(905, 0)">
+      <rect width="225" height="145" rx="10" fill="url(#theory-grad)" stroke="#EC4899" stroke-width="1.5" />
+      <rect x="0" y="0" width="225" height="28" rx="10" fill="#831843" />
+      <text x="112.5" y="18" text-anchor="middle" fill="#FBCFE8" font-size="12" font-weight="bold">Behavioral Nudges &amp; Delivery</text>
+      <text x="112.5" y="52" text-anchor="middle" fill="#F8FAFC" font-size="13" font-weight="bold">临门一脚与交易促发</text>
+      <text x="112.5" y="72" text-anchor="middle" fill="#94A3B8" font-size="11">克服改变阻力 (Overcome Friction)</text>
+      <text x="112.5" y="102" text-anchor="middle" fill="#CBD5E1" font-size="10">心理杠杆：稀缺/社会认同/限时优惠</text>
+      <text x="112.5" y="120" text-anchor="middle" fill="#CBD5E1" font-size="10">物理渠道：一键支付/零摩擦交付</text>
+    </g>
+  </g>
+
+  <!-- Bottom Banner: Forrester & Flywheel (售后体验与反哺闭环) -->
+  <g transform="translate(205, 550)" filter="url(#shadow)">
+    <rect width="740" height="75" rx="12" fill="#064E3B" stroke="#10B981" stroke-width="1.5" />
+    <text x="370" y="28" text-anchor="middle" fill="#6EE7B7" font-size="14" font-weight="bold">
+      6. 售后体验与生态反哺：Forrester 全生命周期体验 &amp; HubSpot 飞轮效应
+    </text>
+    <text x="370" y="52" text-anchor="middle" fill="#ECFDF5" font-size="12">
+      使用/融入 (Use)  ──►  获得支持 (Get Support)  ──►  高满意度  ──►  复购 &amp; 口碑反哺
+    </text>
+  </g>
+
+  <!-- Feedback Loop Paths (反哺线条) -->
+  
+  <!-- Path 1: Down from Node 5 to Bottom Loop -->
+  <path d="M 1017,465 L 1017,587 L 945,587" stroke="#10B981" stroke-width="2.5" stroke-dasharray="5,5" marker-end="url(#arrow-loop)" />
+
+  <!-- Path 2: Loop back from Bottom to Node 2 (Problem Trigger) -->
+  <path d="M 205,587 L 100,587 L 100,285 L 265,285 L 265,268" fill="none" stroke="#10B981" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow-loop)" />
+  <rect x="115" y="275" width="130" height="20" rx="4" fill="#0F172A" />
+  <text x="180" y="289" text-anchor="middle" fill="#6EE7B7" font-size="10">反哺痛点 / 新需求触发</text>
+
+  <!-- Path 3: Loop back from Bottom to Node 3 (McKinsey CDJ Loyalty Loop) -->
+  <path d="M 430,550 L 430,475 L 437,475 L 437,468" fill="none" stroke="#10B981" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow-loop)" />
+  <rect x="365" y="495" width="130" height="20" rx="4" fill="#0F172A" />
+  <text x="430" y="509" text-anchor="middle" fill="#6EE7B7" font-size="10">极速忠诚环 (Loyalty Loop)</text>
+
+</svg>
